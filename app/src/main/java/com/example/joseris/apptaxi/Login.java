@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.example.joseris.apptaxi.FragmnetsRegistroUsuario.Actividad_principalTaxi;
 import com.example.joseris.apptaxi.Modelos.Request.RequestCrearUsuario;
+import com.example.joseris.apptaxi.Modelos.Request.RequestLogin;
+import com.example.joseris.apptaxi.Servicios.ServLogin;
 import com.example.joseris.apptaxi.Servicios.ServRegistroUsuario;
 
 public class Login extends AppCompatActivity {
@@ -43,10 +45,13 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
               //  onShowDialogHeadersClick();
 
+                //ServLogin login=new ServLogin();
+                //RequestLogin requestLogin = new RequestLogin("12345","isabel201999@gmail.com","kdmmdjdkdndjn");
+                //login.LoginUsuario(requestLogin);
 
-                ServRegistroUsuario registro=new ServRegistroUsuario();
-                RequestCrearUsuario requestCrearUsuario = new RequestCrearUsuario("V22369","12345","Isa23","4142122",1,"isabel20199@gmail.com","pasajero",null,null);
-                registro.registrarUsuario(requestCrearUsuario);
+                //ServRegistroUsuario registro=new ServRegistroUsuario();
+                //RequestCrearUsuario requestCrearUsuario = new RequestCrearUsuario("V2236945","12345","Isa23","4142122",1,"isabel201999@gmail.com","pasajero",null,null);
+                //registro.registrarUsuario(requestCrearUsuario);
 
                 //Intent i = new Intent(Login.this, Actividad_principalTaxi.class);
                // startActivity(i);

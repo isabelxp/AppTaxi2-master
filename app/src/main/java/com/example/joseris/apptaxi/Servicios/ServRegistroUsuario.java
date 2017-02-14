@@ -33,9 +33,13 @@ public class ServRegistroUsuario {
 
                 if (response.isSuccessful()) {
                     Log.e("Registro", ":" + call.request().url().toString());
+                    Log.e("Exito", ":" + response.body().getSuccess());
+                    Log.e("Ac", ":" + response.body().getAccount());
                 }else
                 {
                    Log.e("No Registro", "------");
+                    Log.e("No no", ":" + response.body().getSuccess());
+                    Log.e("Accont", ":" + response.body().getAccount());
                 }
             }
             @Override
